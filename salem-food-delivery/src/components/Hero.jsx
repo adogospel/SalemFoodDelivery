@@ -11,7 +11,7 @@ export default function Hero() {
           </h1>
           <p>
             Salem Food Delivery met à l’honneur des recettes locales et
-            généreuses. Commandez vos plats préférés de 11h à 18h à Logbessou
+            généreuses. Commandez vos plats préférés, nous livrons de 11h à 18h
             et profitez d’une expérience gourmande, rapide et soignée.
           </p>
 
