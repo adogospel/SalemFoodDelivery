@@ -1,4 +1,5 @@
 import { ArrowRight, Clock3, MapPin, Star } from "lucide-react";
+import { buildOrderMessage, buildWhatsAppLink } from "../utils/whatsapp";
 
 export default function Hero() {
   return (
@@ -17,7 +18,7 @@ export default function Hero() {
 
           <div className="hero-actions">
             <a
-              href="https://wa.me/237657184629"
+              href={buildWhatsAppLink(buildOrderMessage())}
               target="_blank"
               rel="noreferrer"
               className="btn btn-primary"
@@ -52,6 +53,9 @@ export default function Hero() {
             <img
               src="https://cdn.aistoucuisine.com/assets/e2ac865a-9f0e-4af3-a398-87b2f09e8a0a.webp?format=webp&quality=75&width=1536"
               alt="Plat spécial Salem Food Delivery"
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
             />
             <div className="overlay-card">
               <span className="mini-tag">Best Seller</span>

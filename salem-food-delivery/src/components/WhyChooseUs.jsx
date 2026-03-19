@@ -28,7 +28,7 @@ export default function WhyChooseUs() {
     <section className="section">
       <div className="container">
         <div className="section-heading">
-          <span>Pourquoi choisir Salem</span>
+          <span>Pourquoi choisir Salem ?</span>
           <h2>Une marque qui doit inspirer faim, confiance et envie</h2>
         </div>
 

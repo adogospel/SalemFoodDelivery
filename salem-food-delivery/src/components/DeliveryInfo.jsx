@@ -1,4 +1,5 @@
 import { Clock3, Facebook, MapPin, MessageCircle, Truck } from "lucide-react";
+import { buildOrderMessage, buildWhatsAppLink } from "../utils/whatsapp";
 
 export default function DeliveryInfo() {
   return (
@@ -11,7 +12,7 @@ export default function DeliveryInfo() {
           </h2>
           <p className="light-text">
             Salem Food Delivery assure les livraisons à partir de 11h jusqu’à
-            18h à Logbessou. Le canal principal pour commander est WhatsApp.
+            18h. Le canal principal pour commander est WhatsApp.
           </p>
 
           <div className="delivery-list">
@@ -38,7 +39,7 @@ export default function DeliveryInfo() {
           </p>
 
           <a
-            href="https://wa.me/237657184629"
+            href={buildWhatsAppLink(buildOrderMessage())}
             target="_blank"
             rel="noreferrer"
             className="btn btn-primary full-btn"

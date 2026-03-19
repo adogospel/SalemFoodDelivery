@@ -1,9 +1,10 @@
 import { MessageCircle } from "lucide-react";
+import { buildOrderMessage, buildWhatsAppLink } from "../utils/whatsapp";
 
 export default function WhatsAppFloat() {
   return (
     <a
-      href="https://wa.me/237657184629"
+      href={buildWhatsAppLink(buildOrderMessage())}
       target="_blank"
       rel="noreferrer"
       className="whatsapp-float"
